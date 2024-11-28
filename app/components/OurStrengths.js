@@ -52,17 +52,13 @@ export default function OuraStrenghts() {
     <section id="services" className="py-16 bg-[#f9fafb]">
       <div className="w-[90%] mx-auto text-center">
         <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-4"></div>
-        <h2 className="font-normal text-[28px] sm:text-[32px] md:text-[36px] leading-[38px] sm:leading-[45px]">
-          Our design and{" "}<br></br>
-          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-4">
-            development approach
-          </span>
+        <h2 className="font-semibold text-[28px] sm:text-[32px] md:text-[36px] leading-[38px] sm:leading-[45px]">
+          Our Strengths
         </h2>
-
-        {/* <p className="font-medium text-[16px] sm:text-[18px] lg:text-[20px] pt-2 leading-[24px] sm:leading-[26px] lg:leading-[30px] text-[#2D3748] text-center max-w-[600px] mx-auto">
+        <p className="font-medium text-[16px] sm:text-[18px] lg:text-[20px] pt-2 leading-[24px] sm:leading-[26px] lg:leading-[30px] text-[#2D3748] text-center max-w-[600px] mx-auto">
           We are a leading provider of professional services, dedicated to
           delivering high-quality solutions to businesses of all sizes.
-        </p> */}
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 pt-10">
           {services.map((service, index) => (
             <div

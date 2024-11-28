@@ -11,13 +11,11 @@ h1 {
   color: blue;
 }
 
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.swiper-pagination{
-  position: unset!important;
+.swiper-pagination {
+  position: unset !important;
 }
 @layer base {
   :root {
@@ -82,5 +80,18 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-
+.gradient {
+  a {
+    background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.gradient {
+    background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}

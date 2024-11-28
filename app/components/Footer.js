@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import google from "@/image/google.png";
+import logo from "@/public/logo/Logo.png";
 import facebook from "@/public/facebook.svg";
 import linkedin from "@/public/linkedin.svg";
 import twitter from "@/public/twitter.svg";
@@ -10,8 +11,16 @@ const Footer = () => {
   return (
     <footer className="bg-white text-[#718096] py-8">
       <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center">
+          <Image
+            src={logo}
+            alt="Be Digital Logo"
+            width={150}
+            className="object-contain"
+          />
+        </div>
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="lg:w-1/3 pt-6 lg:pt-20 mb-6 lg:mb-0">
+          <div className="lg:w-1/3 pt-6 lg:pt-16 mb-6 lg:mb-0">
             <p className="text-lg sm:text-base mb-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
@@ -60,7 +69,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold text-[#718096] mb-2">Follow Us</h3>
+                <h3 className="font-semibold text-[#718096] mb-4">Follow Us</h3>
                 <div className="flex">
                   <Link href="#">
                     <span className="text-[#718096] hover:text-gray-300">
@@ -107,10 +116,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="text-center text-sm text-[#718096] mt-6">
-          <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
-        </div>
+      <div className="text-center text-sm  text-[#718096] mt-6">
+        <div className="w-full h-[1px] bg-[#b9b4c0] mb-2"></div>
+        <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
       </div>
     </footer>
   );
